@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- index.css -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>JS Calculator</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: white">Calculator</h1>
+
+    <div class="calcBody">
+      <div id="display">
+        <div id="prevNumber"></div>
+        <div id="currentNumber">0</div>
+      </div>
+
+      <div id="buttonContainer">
+        <div class="btnRow">
+          <button
+            class="buttons"
+            style="background-color: rgb(247, 172, 81)"
+            onclick="clearAll()"
+          >
+            AC
+          </button>
+          <button class="buttons operator" id="%">%</button>
+          <button class="buttons operator" id="^">^</button>
+          <button class="buttons operator" id="/">÷</button>
+        </div>
+        <div class="btnRow">
+          <button class="buttons number" id="7">7</button>
+          <button class="buttons number" id="8">8</button>
+          <button class="buttons number" id="9">9</button>
+          <button class="buttons operator" id="*">x</button>
+        </div>
+        <div class="btnRow">
+          <button class="buttons number" id="4">4</button>
+          <button class="buttons number" id="5">5</button>
+          <button class="buttons number" id="6">6</button>
+          <button class="buttons operator" id="-">-</button>
+        </div>
+        <div class="btnRow">
+          <button class="buttons number" id="1">1</button>
+          <button class="buttons number" id="2">2</button>
+          <button class="buttons number" id="3">3</button>
+          <button class="buttons operator" id="+">+</button>
+        </div>
+
+        <div class="btnRow">
+          <button class="buttons number" id="0">0</button>
+          <button class="buttons number" id=".">.</button>
+          <button
+            id="Del"
+            class="buttons operator"
+            style="background-color: rgb(249, 50, 50)"
+          >
+            Del
+          </button>
+          <button
+            class="buttons operator"
+            id="="
+            style="
+              background-color: rgb(59, 167, 255);
+              height: 60px;
+              width: 60px;
+            "
+          >
+            =
+          </button>
+        </div>
+      </div>
+
+      <div class="mark"></div>
+    </div>
+  </body>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- index js -->
+  <script src="index.js"></script>
+</html>
