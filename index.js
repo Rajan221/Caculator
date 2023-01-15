@@ -173,6 +173,10 @@ for (var i = 0; i < nums.length; i++) {
   nums[i].addEventListener("click", function () {
     let output = getCurrent();
     if (output != NaN) {
+      if (output == 0) {
+        output = "";
+      }
+
       output += this.id;
       current(output);
     }

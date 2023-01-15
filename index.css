@@ -8,8 +8,8 @@ body {
 }
 
 .calcBody {
-  height: 80vh;
-  width: 20vw;
+  height: 550px;
+  width: 280px;
   background-color: #262626;
   margin: auto;
   padding: 10px;
@@ -79,8 +79,25 @@ body {
   height: 340px;
   width: 80px;
   position: relative;
-  left: 72%;
+  left: 73%;
   bottom: 340px;
   z-index: 0;
   border-radius: 100px 0 0 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .calcBody {
+    height: 100vh;
+    width: 100%;
+  }
+  .buttons {
+    margin-top: 7vh;
+  }
+
+  .mark {
+    left: 80vw;
+    position: absolute;
+    height: 50vh;
+    bottom: 15vh;
+  }
 }
